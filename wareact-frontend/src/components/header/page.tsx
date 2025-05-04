@@ -1,86 +1,71 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import Link from 'next/link'
-import Logo from './logo/logo'
-import LogoTitle from './logo/logoTitle'
-import Menu from './logo/menu'
-import MenuClose from './logo/menuClose'
+import { useState } from "react";
+import Link from "next/link";
+import Logo from "./logo/logo";
+import LogoTitle from "./logo/logoTitle";
+import Menu from "./logo/menu";
+import MenuClose from "./logo/menuClose";
+import LogoLine from "./logo/logoLine";
+import MenuList from "./menu/menu";
+import MobileMenu from "./menu/mobileMenu";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => setIsOpen(!isOpen)
+  const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className="w-full bg-white sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-[30px]">
-        {/* Logo */}
-        <Link href="/" className="flex items-center space-x-[4px]">
-         <Logo/>
-         <LogoTitle/>
-        </Link>
+ 
+      <div className="container mx-auto">
+        <header className="w-full  px-4 left-0 ">
+          <div className=" flex lg:flex-row md:flex-col  items-center justify-between xl:px-4 py-[30px]">
+            <div className="flex items-center space-x-[30px]">
+              <Link href="/" className="flex items-center space-x-[4px]">
+                <Logo />
+                {isOpen ? (
+                  <div className="flex items-center space-x-[16px] px-4">
+                    <LogoLine />
+                    <span className="leading-[1.22] md:hidden text-xl transition-opacity duration-300 ease-in-out font-semibold">
+                      Menu
+                    </span>
+                  </div>
+                ) : (
+                  <LogoTitle />
+                )}
+              </Link>
+              <div className="md:flex items-center hidden">
+                <LogoLine />
+              </div>
+              <MenuList />
+            </div>
 
-        {/* Web Menu */}
-        <nav className="hidden md:flex items-center gap-6">
-          <Link href="#">Home</Link>
-          <Link href="#">About</Link>
-          <div className="flex gap-4">
-            <button className="text-blue-600">Login</button>
-            <button className="bg-blue-600 text-white px-4 py-2 rounded">
-              Sign Up
-            </button>
+            <div className="hidden md:flex ml-6 space-x-[9px]">
+              <button className="rounded-[100px] font-semibold text-[14px] leading-[1.4] transition-all duration-300 ease-in-out hover:bg-[#065AF1] hover:text-white text-[#065AF1] border-[#065AF1] py-[10px] px-[20px] cursor-pointer border-[1px]">
+                Book a Demo
+              </button>
+              <button className="rounded-[100px] font-semibold text-[14px] leading-[1.4] transition-all duration-300 ease-in-out hover:bg-[#065AF1] hover:text-white text-[#065AF1] border-[#065AF1] py-[10px] px-[20px] cursor-pointer border-[1px]">
+                Sign In / Sign Up
+              </button>
+            </div>
+
+            {/* Hamburger (Mobile only) */}
+            <div className="md:hidden cursor-pointer">
+              <button onClick={toggleMenu}>
+                {isOpen ? <MenuClose /> : <Menu />}
+              </button>
+            </div>
           </div>
-        </nav>
 
-        {/* Hamburger (Mobile only) */}
-        <div className="md:hidden">
-          <button onClick={toggleMenu}>
-            {isOpen ? <MenuClose/> : <Menu/>}
-          </button>
-        </div>
+          {/* Mobile Dropdown */}
+          <MobileMenu  isOpen={isOpen} setIsOpen={setIsOpen} />
+        </header>
       </div>
+   
+  );
+};
 
-      {/* Mobile Dropdown */}
-      {isOpen && (
-        <nav className="md:hidden px-4 pb-4 space-y-4 bg-white ">
-          <Link href="#" className="block">
-            Home
-          </Link>
-          <Link href="#" className="block">
-          Features
-          </Link>
-          <Link href="#" className="block">
-          Integrations
-          </Link>
-          <Link href="#" className="block">
-          Pricing
-          </Link>
-          <Link href="#" className="block">
-          Insight
-          </Link>
-          <Link href="#" className="block">
-          F.A.Q
-          </Link>
-          <Link href="#" className="block">
-          Contact
-          </Link>
-          <button className="block w-full bg-blue-600 text-white px-4 py-2 rounded">
-          Sign In / Sign Up
-          </button>
-          <button className="block w-full bg-blue-600 text-white px-4 py-2 rounded">
-          Book a Demo
-          </button>
-
-        </nav>
-      )}
-    </header>
-  )
-}
-
-export default Header
-
-
+export default Header;
 
 // import React from "react";
 // import Logo from "./logo/logo";
