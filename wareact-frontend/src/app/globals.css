@@ -26,3 +26,6 @@ body {
   height: 100vh;
 
 }
+.swiper-slide{
+  margin-right: -84px !important;
+}
