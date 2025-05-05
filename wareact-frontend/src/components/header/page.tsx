@@ -18,7 +18,7 @@ const Header = () => {
   return (
  
       <div className="container mx-auto">
-        <header className="w-full  px-4 left-0 ">
+        <header className="w-full  px-4 h-full overflow-x-scroll  ">
           <div className=" flex lg:flex-row md:flex-col  items-center justify-between xl:px-4 py-[30px]">
             <div className="flex items-center space-x-[30px]">
               <Link href="/" className="flex items-center space-x-[4px]">
@@ -66,22 +66,3 @@ const Header = () => {
 };
 
 export default Header;
-
-// import React from "react";
-// import Logo from "./logo/logo";
-// import LogoTitle from "./logo/logoTitle";
-
-// const Header = () => {
-//   return (
-//     <div>
-//       <div className="md:bg-[url('/images/header/headerBg.png')] md:w-full md:h-[554px] md:flex md:bg-no-repeat md:bg-cover md:bg-center">
-//         <div className="flex items-center space-x-[4px]">
-//         <Logo />
-//         <LogoTitle/>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Header;

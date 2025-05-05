@@ -22,10 +22,10 @@ const MobileMenu = ({ isOpen, setIsOpen }: MobileMenuProps) => {
     <div
       className={`transition-all duration-300 ease-in-out ${
         isOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"
-      } overflow-hidden`}
+      } bg-white`}
     >
       {isOpen && (
-        <nav className=" fixed top-[100px] left-0 w-full h-[calc(100vh-100px)] z-50 bg-white px-4 py-6 space-y-6 transition-all duration-300 ease-in-out overflow-y-auto">
+        <nav className=" relative w-full  z-50 bg-white px-4 py-6 space-y-6 transition-all duration-300 ease-in-out overflow-y-auto">
           {" "}
           {navItems.map((item) => {
             const isActive = pathname === item.href;

@@ -13,9 +13,6 @@ const Hero = () => {
         <h1 className="text-4xl md:text-[56px] block lg:hidden text-center font-semibold leading-[1.22] text-black">
           Precision-Driven 3PL Software for Next-Level Logistics
         </h1>
-        <h1 className="block lg:hidden mt-[30px] text-3xl md:text-5xl font-semibold leading-[1.22] text-black">
-          $29.99
-        </h1>
         <div className="flex flex-col lg:items-start justify-center items-center">
           <p className="text-center lg:text-left mt-[10px] text-sm leading-[1.22] font-normal">
             Built for 3PL warehouses, our software <br /> automates everything
