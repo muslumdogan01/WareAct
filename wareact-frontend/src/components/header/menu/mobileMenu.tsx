@@ -25,7 +25,7 @@ const MobileMenu = ({ isOpen, setIsOpen }: MobileMenuProps) => {
       } bg-white`}
     >
       {isOpen && (
-        <nav className=" relative w-full  z-50 bg-white px-4 py-6 space-y-6 transition-all duration-300 ease-in-out overflow-y-auto">
+        <nav className=" relative overflow-x-scroll   w-full  z-50 bg-white px-4 py-6 space-y-6 transition-all duration-300 ease-in-out overflow-y-auto">
           {" "}
           {navItems.map((item) => {
             const isActive = pathname === item.href;
