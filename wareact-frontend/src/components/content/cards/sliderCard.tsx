@@ -20,17 +20,9 @@ const SliderCard = ({
   return (
     <div
       className={`relative ${width} ${height} max-w-[80vw] bg-white rounded-2xl p-6 text-lg font-semibold shrink-0 flex flex-col items-start justify-between`}
-      style={{
-        boxShadow: "0px 20px 80px -20px rgba(0, 0, 0, 0.1)",
-      }}
+  
     >
-      {/* INNER SHADOW katmanı */}
-      <div
-        className="absolute inset-0 pointer-events-none rounded-2xl"
-        style={{
-          boxShadow: "inset 0 0 30px -4px rgba(10, 40, 191, 0.06)",
-        }}
-      />
+
 
       {/* Kartın içeriği */}
       <div className="relative z-10 w-full h-full flex flex-col justify-between">

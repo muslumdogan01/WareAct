@@ -9,6 +9,7 @@ import MenuClose from "./logo/menuClose";
 import LogoLine from "./logo/logoLine";
 import MenuList from "./menu/menu";
 import MobileMenu from "./menu/mobileMenu";
+import Hero from "./hero/page";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +17,7 @@ const Header = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
- 
+    <div className="w-full naber   z-20 relative lg:bg-[url('/images/header/headerBg.png')] min-h-[600px]  max-h-[800px] lg:bg-no-repeat lg:bg-cover bg-center flex flex-col">
       <div className="container mx-auto">
         <header className="w-full relative  z-50 px-4 h-full ">
           <div className=" flex lg:flex-row md:flex-col  items-center justify-between xl:px-4 py-[30px]">
@@ -58,10 +59,11 @@ const Header = () => {
           </div>
 
           {/* Mobile Dropdown */}
-          <MobileMenu  isOpen={isOpen} setIsOpen={setIsOpen} />
+          <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen} />
         </header>
       </div>
-   
+      <Hero />
+    </div>
   );
 };
 

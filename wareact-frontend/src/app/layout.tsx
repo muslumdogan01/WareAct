@@ -21,10 +21,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="w-full h-screen lg:bg-[url('/images/header/headerBg.png')] lg:bg-no-repeat lg:bg-cover bg-center lg:min-h-[554px] flex flex-col ">
-          <Header />
-          {children}
-        </div>
+        <Header />
+        {children}
       </body>
     </html>
   );
