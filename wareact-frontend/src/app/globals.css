@@ -5,7 +5,7 @@
 @layer utilities {
   @media (min-width: 2700px) {
     .naber{
-      max-width: 2050px; /* veya istediğin genişlik */
+      max-width: 2550px; /* veya istediğin genişlik */
       margin-left: auto;
       margin-right: auto;
       padding-left: 1rem; /* responsive padding */
