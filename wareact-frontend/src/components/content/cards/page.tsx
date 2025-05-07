@@ -31,7 +31,7 @@ const ReusableSlider = ({
   ];
 
   return (
-    <div className="w-full overflow-hidden mt-[50px] md:flex md:w-full md:justify-center md:items-center ">
+    <div className="w-full overflow-hidden mt-[50px] md:flex md:w-full md:justify-center md:items-center bg-[#F3F4F6]">
       <Swiper
         slidesPerView={"auto"}
         spaceBetween={16}

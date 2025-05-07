@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const DeliveryInfo = () => {
   return (
-    <section className="w-full px-4 md:px-8 lg:px-16  bg-[#F3F4F6]">
+    <section className="w-full px-4 md:px-8 lg:px-16 pt-[100px]  bg-[#F3F4F6]">
       <div className="max-w-[1280px] mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-10">
         {/* Sol: Başlık + görseller */}
         <div className="relative flex flex-col items-center lg:items-start lg:w-1/2 space-y-6">
@@ -42,7 +42,7 @@ const DeliveryInfo = () => {
           </div>
 
           {/* Başlık – kutunun üstünde */}
-          <h2 className="absolute top-10 left-10 text-xl md:text-2xl lg:text-4xl font-semibold leading-[1.32] text-black z-20">
+          <h2 className="lg:absolute lg:top-10 lg:left-10 text-xl md:text-2xl lg:text-4xl font-semibold leading-[1.32] text-black z-20">
             Teslimat, Paketleme  ve <br /> Kargo Hizmeti Sunuyoruz!
           </h2>
         </div>

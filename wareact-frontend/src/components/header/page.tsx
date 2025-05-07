@@ -17,7 +17,7 @@ const Header = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <div className="w-full z-20 relative lg:bg-[url('/images/header/headerBg.png')] min-h-[600px]  max-h-[800px] lg:bg-no-repeat lg:bg-cover bg-center flex flex-col">
+    <div className="w-full z-20 relative lg:bg-[url('/images/header/headerBg.png')] lg:min-h-[600px]  lg:max-h-[800px] lg:bg-no-repeat lg:bg-cover bg-center flex flex-col">
       <div className="container mx-auto">
         <header className="w-full relative  z-50 px-4 h-full ">
           <div className=" flex lg:flex-row md:flex-col  items-center justify-between xl:px-4 py-[30px]">
