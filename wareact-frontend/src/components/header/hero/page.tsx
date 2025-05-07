@@ -1,32 +1,52 @@
+import Image from "next/image";
 import React from "react";
 
 const Hero = () => {
   return (
-    <section className="container mx-auto">
-      <div className="w-full justify-between items-center flex flex-col lg:flex-row px-8 pt-2 pb-[50px] lg:pb-0 xl:pt-9">
-        <h1 className="text-2xl  xl:text-[56px] hidden lg:block text-left font-semibold leading-[1.22] text-black">
-          3PL Warehouse <br /> Management Software <br /> for Next Level
-          Logistics
-        </h1>
+    <div className=" lg:absolute lg:top-[110px] w-full z-50">
+      <section className="container mx-auto w-full">
+        <div className="w-full justify-between items-center flex flex-col lg:flex-row px-8 pt-2 pb-[50px] lg:pb-0 xl:pt-9">
+          <h1 className="text-2xl  xl:text-[56px] hidden lg:flex text-left font-semibold leading-[1.22] text-black">
+            3PL Warehouse <br /> Management Software <br /> for Next Level
+            Logistics
+          </h1>
 
-        <h1 className="text-4xl md:text-[56px] block lg:hidden text-center font-semibold leading-[1.22] text-black">
-          Precision-Driven 3PL Software for Next-Level Logistics
-        </h1>
-        <div className="flex flex-col lg:items-start justify-center items-center">
-          <p className="text-center lg:text-left mt-[50px] text-[18px] leading-[1.46] font-normal">
-            Built for 3PL warehouses, our software <br /> automates everything
-            from inventory <br /> tracking to billing—helping you deliver <br />
-            faster, smarter, and more accurate <br /> fulfillment.
-          </p>
-          <button className="cursor-pointer hover:bg-white hover:border-[#065AF1] hover:border-[1px] transition-all duration-300 ease-in-out hover:text-[#065AF1] block lg:hidden mt-[30px] bg-[#065AF1] text-white  w-[179px] h-[40px] rounded-[100px]">
-            Book a Demo
-          </button>
-          <button className="cursor-pointer hover:bg-white hover:border-[#065AF1] hover:border-[1px] transition-all duration-300 ease-in-out hover:text-[#065AF1] hidden lg:block mt-[30px] bg-[#065AF1] text-white  w-[179px] h-[40px] rounded-[100px]">
-            See Pricing
-          </button>
+          <h1 className="text-4xl md:text-[56px] block lg:hidden text-center font-semibold leading-[1.22] text-black">
+            Precision-Driven 3PL Software for Next-Level Logistics
+          </h1>
+          <div className="flex flex-col lg:items-start justify-center items-center">
+            <p className="text-center lg:text-left mt-[50px] lg:mt-0 text-[18px] leading-[1.46] font-normal">
+              Built for 3PL warehouses, our software <br /> automates everything
+              from inventory <br className="lg:hidden block" /> tracking{" "}
+              <br className="hidden lg:block" /> to billing—helping you deliver{" "}
+              <br className="lg:hidden block" />
+              faster, smarter, <br className="hidden lg:block" /> and more
+              accurate <br className="lg:hidden block" /> fulfillment.
+            </p>
+            <button className="cursor-pointer hover:bg-white hover:border-[#065AF1] hover:border-[1px] transition-all duration-300 ease-in-out hover:text-[#065AF1] block lg:hidden mt-[30px] bg-[#065AF1] text-white  w-[179px] h-[40px] rounded-[100px]">
+              Book a Demo
+            </button>
+            <button className="cursor-pointer hover:bg-white hover:border-[#065AF1] hover:border-[1px] transition-all duration-300 ease-in-out hover:text-[#065AF1] hidden lg:block mt-[30px] bg-[#065AF1] text-white  w-[179px] h-[40px] rounded-[100px]">
+              See Pricing
+            </button>
+          </div>
         </div>
+      </section>
+      <div
+        className="absolute top-6 lg:block hidden  -right-30 z-40 overflow-hidden 
+                w-[150px] h-[200px] 
+                md:w-[220px] md:h-[300px] 
+                lg:w-[300px] lg:h-[400px] 
+                xl:w-[422px] xl:h-[571px]"
+      >
+        <Image
+          src="/icons/content/square.svg"
+          alt="square"
+          fill
+          className="object-contain"
+        />
       </div>
-    </section>
+    </div>
   );
 };
 

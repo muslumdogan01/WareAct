@@ -9,7 +9,6 @@ import MenuClose from "./logo/menuClose";
 import LogoLine from "./logo/logoLine";
 import MenuList from "./menu/menu";
 import MobileMenu from "./menu/mobileMenu";
-import Hero from "./hero/page";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -62,7 +61,7 @@ const Header = () => {
           <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen} />
         </header>
       </div>
-      <Hero />
+      
     </div>
   );
 };

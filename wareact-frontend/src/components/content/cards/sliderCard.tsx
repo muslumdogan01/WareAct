@@ -12,8 +12,8 @@ const SliderCard = ({
   title,
   icon,
   iconPosition = "top",
-  width = "w-[250px]",
-  height = "h-[200px]",
+  width = "w-[200px]",
+  height = "h-[240px]",
 }: SliderCardProps) => {
   const isImage = typeof icon === "string" && icon.includes("/");
 

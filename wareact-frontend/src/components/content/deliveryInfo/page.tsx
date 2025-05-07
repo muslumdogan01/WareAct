@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const DeliveryInfo = () => {
   return (
-    <section className="w-full px-4 md:px-8 lg:px-16 pt-[100px]  bg-[#F3F4F6]">
+    <section className="w-full px-4 md:px-8 lg:px-16  bg-[#F3F4F6]">
       <div className="max-w-[1280px] mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-10">
         {/* Sol: Başlık + görseller */}
         <div className="relative flex flex-col items-center lg:items-start lg:w-1/2 space-y-6">
@@ -25,12 +25,6 @@ const DeliveryInfo = () => {
               fill
               className="object-contain w-[300px] h-[289px]"
             />
-            <Image
-              src="/icons/content/deliveryUnion.svg"
-              alt="Küçük Kutu"
-              fill
-              className="object-contain w-[329px] h-[317px]"
-            />
           </div>
           <div className="hidden lg:block w-[150px] h-[173px] relative z-10">
             <Image
@@ -42,13 +36,13 @@ const DeliveryInfo = () => {
           </div>
 
           {/* Başlık – kutunun üstünde */}
-          <h2 className="lg:absolute lg:top-10 lg:left-10 text-xl md:text-2xl lg:text-4xl font-semibold leading-[1.32] text-black z-20">
-            Teslimat, Paketleme  ve <br /> Kargo Hizmeti Sunuyoruz!
+          <h2 className="lg:absolute lg:top-24 lg:left-10 text-center text-4xl font-semibold leading-[1.32] text-black z-20">
+            Teslimat, Paketleme <br />  ve Kargo Hizmeti Sunuyoruz!
           </h2>
         </div>
 
         {/* Sağ: Açıklama */}
-        <div className="text-sm md:text-base text-[#333] space-y-4  lg:w-1/2">
+        <div className="text-[18px] text-center pt-[100px]  leading-[1.6] font-normal md:text-base text-[#333] space-y-4 lg:text-left lg:max-w-[496px]">
           <p>
             İhtiyacınız olan her türlü teslimat, paketleme ve kargo işlemlerini
             hızlı ve güvenilir bir şekilde gerçekleştiriyoruz. Profesyonel
