@@ -42,7 +42,7 @@ const ReusableSlider = ({
           },
           1040: {
             spaceBetween: 24, 
-            
+            allowTouchMove: false,
           },
         }}
         grabCursor

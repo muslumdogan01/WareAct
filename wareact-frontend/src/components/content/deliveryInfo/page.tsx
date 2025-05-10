@@ -2,65 +2,66 @@ import Image from "next/image";
 
 const DeliveryInfo = () => {
   return (
-    <section className="w-full px-4 md:px-8 lg:px-16  bg-[#F3F4F6]">
-      <div className="max-w-[1280px] mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-10">
-        {/* Sol: Başlık + görseller */}
-        <div className="relative flex flex-col items-center lg:items-start lg:w-1/2 space-y-6">
-          
-          {/* Büyük kutu */}
-          <div className="hidden lg:block w-[500px] h-[462px] relative z-10">
+    <div className="w-full flex justify-center items-center px-4 py-10 bg-[#F3F4F6]">
+      {/* Ana container: yan yana hizalama */}
+      <div className="max-w-[1280px] w-full flex flex-col lg:flex-row gap-4 lg:gap-16 items-center relative">
+      <h2 className="absolute z-40 top-28 left-42 text-4xl font-semibold leading-[1.32] text-black">
+              Teslimat, Paketleme  ve <br /> Kargo Hizmeti Sunuyoruz!
+            </h2>
+        <div className="w-full lg:w-1/2 h-[500px] relative flex justify-center items-center ">
+          {/* Orta kutu */}
+          <div className="hidden lg:block w-[500px] h-[462px] absolute left-1/2 transform -translate-x-1/2 z-30">
             <Image
               src="/icons/content/delivery1.svg"
-              alt="Büyük Kargo Kutusu"
+              alt="orta Kargo Kutusu"
               fill
-              className="object-contain w-[500px] h-[462px]"
+              className="object-contain"
             />
+
           </div>
 
-          {/* Küçük kutu */}
-          <div className="hidden lg:block w-[350px] h-[350px] absolute -bottom-10 left-10 z-0">
+          {/* Alt kutular */}
+          <div className="hidden lg:block w-[350px] h-[350px] absolute top-[290px] left-[30%] transform -translate-x-1/2 z-20">
             <Image
               src="/icons/content/delivery2.svg"
-              alt="Küçük Kutu"
+              alt="orta Kutu"
               fill
-              className="object-contain w-[300px] h-[289px]"
+              className="object-contain"
             />
           </div>
-          <div className="hidden lg:block w-[150px] h-[173px] relative z-10">
+
+          <div className="hidden lg:block w-[150px] h-[173px] absolute top-[303px] left-[8%] transform -translate-x-1/2 z-10">
             <Image
               src="/icons/content/delivery3.svg"
-              alt="Büyük Kargo Kutusu"
+              alt="küçük Kargo Kutusu"
               fill
-              className="object-contain w-[150px] h-[173px]"
+              className="object-contain"
             />
           </div>
-
-          {/* Başlık – kutunun üstünde */}
-          <h2 className="lg:absolute lg:top-24 lg:left-10 text-center text-4xl font-semibold leading-[1.32] text-black z-20">
-            Teslimat, Paketleme <br />  ve Kargo Hizmeti Sunuyoruz!
-          </h2>
         </div>
 
-        {/* Sağ: Açıklama */}
-        <div className="text-[18px] text-center pt-[100px]  leading-[1.6] font-normal md:text-base text-[#333] space-y-4 lg:text-left lg:max-w-[496px]">
-          <p>
-            İhtiyacınız olan her türlü teslimat, paketleme ve kargo işlemlerini
-            hızlı ve güvenilir bir şekilde gerçekleştiriyoruz. Profesyonel
-            ekibimiz, gönderilerinizi en iyi şekilde paketleyerek hasar riskini
-            minimize eder ve zamanında teslimat garantisi sunar. İster küçük bir
-            zarf, ister büyük bir koliyi gönderiyor olun, her gönderiye aynı
-            özeni gösteriyoruz.
-          </p>
-          <p>
-            Yüksek kaliteli paketleme malzemeleriyle, ürünlerinizin güvende
-            olduğundan emin olabilirsiniz. Ayrıca, geniş kargo ağımız sayesinde
-            ulusal ve uluslararası gönderilerinizi hızlı ve güvenilir şekilde
-            ulaştırıyoruz. Tüm bu hizmetleri, bütçenize uygun fiyatlarla sunarak
-            işlerinizi kolaylaştırıyoruz.
-          </p>
+        {/* Metin */}
+        <div className="w-full lg:w-1/2">
+          <div className="text-[18px] text-center lg:text-left leading-[1.6] font-normal text-[#333] space-y-4">
+            <p>
+              İhtiyacınız olan her türlü teslimat, paketleme ve kargo işlemlerini
+              hızlı ve güvenilir bir şekilde gerçekleştiriyoruz. Profesyonel
+              ekibimiz, gönderilerinizi en iyi şekilde paketleyerek hasar riskini
+              minimize eder ve zamanında teslimat garantisi sunar. İster küçük bir
+              zarf, ister büyük bir koliyi gönderiyor olun, her gönderiye aynı
+              özeni gösteriyoruz.
+            </p>
+            <p>
+              Yüksek kaliteli paketleme malzemeleriyle, ürünlerinizin güvende
+              olduğundan emin olabilirsiniz. Ayrıca, geniş kargo ağımız sayesinde
+              ulusal ve uluslararası gönderilerinizi hızlı ve güvenilir şekilde
+              ulaştırıyoruz. Tüm bu hizmetleri, bütçenize uygun fiyatlarla sunarak
+              işlerinizi kolaylaştırıyoruz.
+            </p>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
