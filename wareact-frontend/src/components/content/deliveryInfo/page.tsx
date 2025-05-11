@@ -2,13 +2,13 @@ import Image from "next/image";
 
 const DeliveryInfo = () => {
   return (
-    <div className="w-full flex justify-center items-center px-4 py-10 bg-[#F3F4F6]">
+    <div className="w-full flex justify-center items-center px-4 py-[100px] lg:py-15 ">
       {/* Ana container: yan yana hizalama */}
-      <div className="max-w-[1280px] w-full flex flex-col lg:flex-row gap-4 lg:gap-16 items-center relative">
-      <h2 className="absolute z-40 top-28 left-42 text-4xl font-semibold leading-[1.32] text-black">
-              Teslimat, Paketleme  ve <br /> Kargo Hizmeti Sunuyoruz!
+      <div className="lg:max-w-[1280px] w-full flex flex-col lg:flex-row gap-4 lg:gap-16 justify-center items-center relative">
+      <h2 className="lg:absolute z-40 lg:top-28 text-center lg:left-42 text-4xl font-semibold leading-[1.32] text-black">
+              Teslimat, Paketleme <br className="lg:hidden block" /> ve <br className="hidden lg:block" /> Kargo Hizmeti Sunuyoruz!
             </h2>
-        <div className="w-full lg:w-1/2 h-[500px] relative flex justify-center items-center ">
+        <div className="w-full lg:w-1/2 lg:h-[500px] relative flex justify-center items-center ">
           {/* Orta kutu */}
           <div className="hidden lg:block w-[500px] h-[462px] absolute left-1/2 transform -translate-x-1/2 z-30">
             <Image
