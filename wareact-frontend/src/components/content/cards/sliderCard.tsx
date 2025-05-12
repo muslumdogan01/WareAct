@@ -19,7 +19,7 @@ const SliderCard = ({
 
   return (
     <div
-      className={`relative ${width} ${height} max-w-[80vw]  bg-white shadow-[0px_50px_80px_-20px_rgba(0,0,0,0.1)] lg:shadow-none rounded-2xl p-6 text-lg font-semibold shrink-0 flex flex-col items-start justify-between`}
+      className={`relative ${width} ${height} max-w-[80vw]  bg-white shadow-[0_4px_20px_rgba(0,0,0,0.05)] lg:shadow-none m-8 lg:m-0 rounded-2xl p-6 text-lg font-semibold shrink-0 flex flex-col items-start justify-between`}
     >
 
 
